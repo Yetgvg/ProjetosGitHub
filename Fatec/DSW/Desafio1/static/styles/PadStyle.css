@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#HomeImg{
+    background-image: url("../imagens/fundo.png");
+}
+
+.ImgPad{
+    background-image: url("../imagens/fundo2.png");
+}
+
+.ImgLogo{
+    margin-left: 450px;
+    margin-top: 12px;
+}
+
+.ImgCapa{
+    margin-left: 450px;
+    margin-top: 30px;
+}
+
+.ARight{
+    margin-left: 480px;
+}
+
+.DivTexto{
+    margin-top: 15px;
+    margin-left: 450px;
+    width: 47.2%;
+}
+
+.DivTextoRod{
+    margin-left: 450px;
+    width: 47.2%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1{
+    margin-top: 40px;
+}
+
+.OlMargin{
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

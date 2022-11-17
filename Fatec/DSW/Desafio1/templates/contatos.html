@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Desafio Felipe AG</title>
     <link rel="stylesheet" href="{{url_for('static', filename='styles/PadStyle.css')}}">
 </head>
+
 <body class="ImgPad">
     <div>
         <img class="ImgLogo" src="static/imagens/logo.png">
@@ -15,6 +17,8 @@
         <a href="quemsomos.html">Quem somos</a>
         |
         <a href="contatos.html">Contatos</a>
+        |
+        <a href="users.html">Contatações</a>
     </div>
     <div class="DivTexto">
         <H1>Entre em contato</H1>
@@ -22,16 +26,20 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </p>
         <hr>
-        <label>Seu e-mail:</label><br>
-        <input type="text"><br>
-        <label>Assunto:</label><br>
-        <input type="text"><br>
-        <label>Descrição:</label><br>
-        <textarea></textarea><br>
-        <button>Enviar</button>
+        <form action="contatos.html" method="POST">
+            <label>Seu e-mail:</label><br>
+            <input type="text" name="email"><br>
+            <label>Assunto:</label><br>
+            <input type="text" name="assunto"><br>
+            <label>Descrição:</label><br>
+            <textarea name="descricao"></textarea><br>
+            <button>Enviar</button>
+        </form>
+        <h1>{{ resultado }}</h1>
     </div>
     <div class="DivTextoRod">
         <p><strong>Todos os direitos reservados</strong></p>
     </div>
 </body>
+
 </html>
